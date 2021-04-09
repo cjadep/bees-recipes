@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bee's Recipes</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheet Connections -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="icon" href="css/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- Font Awesome (for cute icons) -->
+  <script src="https://kit.fontawesome.com/159ac4896e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Bee's Recipes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="contents.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="savoury.html">Savoury</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dessert.html">Desserts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="treats.html">Treats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Recipe list section -->
+  <section class="colored-section-type2 recipe-list-section">
+    <div class="container-fluid recipe original-view">
+      <img src="images/bee.png" alt="bee-image" class="top-left-image">
+      <h2 class="book-description">What would life be like without the wholesome and comforting category of savoury foods?</h2>
+      <div id="book">
+
+
+        <div class="book-cover hard p1 odd" id="book-zoom">
+          <h1 class="book-cover-title">Savoury</h1>
+          <img class="book-cover-image" src="images/soup.png" alt="soup-image">
+        </div>
+
+        <div class="hard book-cover-inner">
+        </div>
+        <div class="page-right">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">List of Savoury Recipes</h2>
+            <div class="row">
+              <button type="button" name="button" data-page="4" class="btn recipe-list-item">Savoury Tart</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="5" class="btn recipe-list-item">Chicken Soup</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="6" class="btn recipe-list-item">Potato Soup</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="7" class="btn recipe-list-item">Ham and Lentil Soup</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="8" class="btn recipe-list-item">Potato Bake</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="9" class="btn recipe-list-item">Blue Cheese Sauce</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="savoury-tart">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Savoury Tart</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>5x thick slices of bread</li>
+              <li>1x tbls sugar</li>
+              <li>1x cup milk</li>
+              <li>1/2x tps baking powder</li>
+              <li>3x eggs</li>
+              <li>1x pinch of salt</li>
+              <li>1x cup chopped ham or tin salmon or bacon bits<em>(optional)</em></li>
+              <li>1x chopped onion and/or asparagus<em>(optional)</em></li>
+              <li>1 1/2 cups of grated cheddar cheese<em>(optional)</em></li>
+              <li>1x tbls chopped chives or parsley <em>(optional)</em></li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Grease/spray a pie dish or little shallow muffin pans.
+              Cut crusts off the bread and break bread into small pieces.
+              Mix all ingredients well.
+              Place in dish or pans and bake at 180 degrees Celsius or until golden brown +/- 30 mins.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="chicken-soup">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Chicken Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x chicken or giblets and liver</li>
+              <li>2x large grated carrots</li>
+              <li>2x large diced carrots</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>2x tsp of salt</li>
+              <li>1x chopped onion</li>
+              <li>3/4x cup of rice</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Boil the chicken or giblets for 1 ½ hours, add the rice, salt, diced carrots, and onion. Boil until the carrot is cooked, approximately 30min-45min. Add the parsley and grated carrot and cook for another 15min or until
+              ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="potato-soup">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Potato Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x piece of shin</li>
+              <li>2x large diced carrots</li>
+              <li>2x large diced carrots</li>
+              <li>1x diced turnip</li>
+              <li>1x chopped leak</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>4x sliced potatoes</li>
+              <li>1 1/2x tsp of salt</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Cook piece of shin for 1 hour, then take the meat out and add the carrots, turnip, leak and potatoes. Add in the salt and cook for 45min. Add the grated carrot and cook until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="ham-lentil-soup">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Ham and Lentil Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x piece of ham</li>
+              <li>1/2x pound of lentils</li>
+              <li>2x diced carrots</li>
+              <li>1x diced turnip</li>
+              <li>1x chopped leak</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>1x tsp of salt</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Boil the joint of ham for about 1 ½ hours, then add the lentils, carrots, turnips, and leak. Simmer for about 30min, then add carrot, parsley, and salt. Boil until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="potato-bake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Potato Bake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>4x potatoes</li>
+              <li>1x cup milk</li>
+              <li>250ml cream</li>
+              <li>200g grated cheese</li>
+              <li>4x slices of ham</li>
+              <li>1/3 tsp garlic (or to taste)</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Slice the potatoes thinly and boil in milk until they are soft. Keep the milk. Layer potatoes in a dish and pour the milk and cream over.
+              Season and then repeat the layer. Place the cheese and chopped ham over the top, add some garlic and bake until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="blue-cheese-sauce">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Blue Cheese Sauce</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x blue cheese</li>
+              <li>1x butter (equal to the blue cheese)</li>
+              <li>1/2x tsp of garlic (or to taste)</li>
+              <li>250ml cream</li>
+              <li>2x tsp of Maizina (corn starch)</li>
+              <li>1/3x tsp of fresh black pepper (or to taste)</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Melt the butter and add the garlic, let it simmer a little. Break the blue cheese into the melted butter. When the cheese is melted, add the cream. To thicken the sauce, add the Maizina (mixed with a little milk or sauce to avoid clumping). Add the black pepper and simmer for a while and stir often.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="tbc">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">To be Continued...</h2>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="hard book-cover-inner">
+        </div>
+        <div class="book-cover hard" id="backcover">
+          <h1 class="book-cover-title">The End</h1>
+          <img class="book-cover-image" src="images/baking-1.png" alt="crossed-utensils">
+        </div>
+
+      </div>
+    <h2 class="book-description-end">For more awesome recipes check out the other categories.</h2>
+
+    </div>
+</section>
+
+<!-- Alternate view -->
+<section class="colored-section-type2 recipe-list-section-alternate">
+    <div class="container-fluid recipe-2 alternate-view">
+
+        <div class="page-right">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">List of Savoury Recipes</h2>
+            <div class="row">
+              <a href ="#savoury-tart-alt" class="recipe-list-item">Savoury Tart</a>
+            </div>
+            <div class="row">
+              <a href ="#chicken-soup-alt" class="btn recipe-list-item">Chicken Soup</a>
+            </div>
+            <div class="row">
+              <a href="#potato-soup-alt" class="btn recipe-list-item">Potato Soup</a>
+            </div>
+            <div class="row">
+              <a href="#ham-lentil-soup-alt" class="btn recipe-list-item">Ham and Lentil Soup</a>
+            </div>
+            <div class="row">
+              <a href="#potato-bake-alt" class="btn recipe-list-item">Potato Bake</a>
+            </div>
+            <div class="row">
+              <a href="#blue-cheese-sauce-alt" class="btn recipe-list-item">Blue Cheese Sauce</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="savoury-tart-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading" >Savoury Tart</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>5x thick slices of bread</li>
+              <li>1x tbls sugar</li>
+              <li>1x cup milk</li>
+              <li>1/2x tps baking powder</li>
+              <li>3x eggs</li>
+              <li>1x pinch of salt</li>
+              <li>1x cup chopped ham or tin salmon or bacon bits<em>(optional)</em></li>
+              <li>1x chopped onion and/or asparagus<em>(optional)</em></li>
+              <li>1 1/2 cups of grated cheddar cheese<em>(optional)</em></li>
+              <li>1x tbls chopped chives or parsley <em>(optional)</em></li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Grease/spray a pie dish or little shallow muffin pans.
+              Cut crusts off the bread and break bread into small pieces.
+              Mix all ingredients well.
+              Place in dish or pans and bake at 180 degrees Celsius or until golden brown +/- 30 mins.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="chicken-soup-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Chicken Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x chicken or giblets and liver</li>
+              <li>2x large grated carrots</li>
+              <li>2x large diced carrots</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>2x tsp of salt</li>
+              <li>1x chopped onion</li>
+              <li>3/4x cup of rice</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Boil the chicken or giblets for 1 ½ hours, add the rice, salt, diced carrots, and onion. Boil until the carrot is cooked, approximately 30min-45min. Add the parsley and grated carrot and cook for another 15min or until
+              ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="potato-soup-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Potato Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x piece of shin</li>
+              <li>2x large diced carrots</li>
+              <li>2x large diced carrots</li>
+              <li>1x diced turnip</li>
+              <li>1x chopped leak</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>4x sliced potatoes</li>
+              <li>1 1/2x tsp of salt</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Cook piece of shin for 1 hour, then take the meat out and add the carrots, turnip, leak and potatoes. Add in the salt and cook for 45min. Add the grated carrot and cook until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="ham-lentil-soup-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Ham and Lentil Soup</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x piece of ham</li>
+              <li>1/2x pound of lentils</li>
+              <li>2x diced carrots</li>
+              <li>1x diced turnip</li>
+              <li>1x chopped leak</li>
+              <li>1x bunch of finely chopped parsley</li>
+              <li>1x tsp of salt</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Boil the joint of ham for about 1 ½ hours, then add the lentils, carrots, turnips, and leak. Simmer for about 30min, then add carrot, parsley, and salt. Boil until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="potato-bake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Potato Bake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>4x potatoes</li>
+              <li>1x cup milk</li>
+              <li>250ml cream</li>
+              <li>200g grated cheese</li>
+              <li>4x slices of ham</li>
+              <li>1/3 tsp garlic (or to taste)</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Slice the potatoes thinly and boil in milk until they are soft. Keep the milk. Layer potatoes in a dish and pour the milk and cream over.
+              Season and then repeat the layer. Place the cheese and chopped ham over the top, add some garlic and bake until ready.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="blue-cheese-sauce-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Blue Cheese Sauce</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x blue cheese</li>
+              <li>1x butter (equal to the blue cheese)</li>
+              <li>1/2x tsp of garlic (or to taste)</li>
+              <li>250ml cream</li>
+              <li>2x tsp of Maizina (corn starch)</li>
+              <li>1/3x tsp of fresh black pepper (or to taste)</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Melt the butter and add the garlic, let it simmer a little. Break the blue cheese into the melted butter. When the cheese is melted, add the cream. To thicken the sauce, add the Maizina (mixed with a little milk or sauce to avoid clumping). Add the black pepper and simmer for a while and stir often.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="tbc">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">To be Continued...</h2>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+<!-- Javascript  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="turn.min.js"></script>
+
+  <script>
+    $('#book').turn({
+      gradients: true,
+      acceleration: true
+    });
+  </script>
+  <script src="savoury.js"></script>
+
+
+</body>
+
+
+<footer class="end-section" id="footer">
+  <p class="footer-text">Recipes have been compiled and sourced from various sources</p>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
+
+
+</html>

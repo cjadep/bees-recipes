@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bee's Recipes</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheet Connections -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="icon" href="css/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- Font Awesome (for cute icons) -->
+  <script src="https://kit.fontawesome.com/159ac4896e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Bee's Recipes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="contents.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="savoury.html">Savoury</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dessert.html">Desserts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="treats.html">Treats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="colored-section-type2 recipe-list-section">
+    <div class="container-fluid recipe">
+      <img src="images/bee.png" alt="bee-image" class="top-left-image">
+      <h2 class="book-description">Tasty treats and yummy snacks are hard to beat.</h2>
+      <div id="book">
+
+
+        <div class="book-cover-trt hard p1 odd" id="book-zoom">
+          <h1 class="book-cover-title">Treats</h1>
+          <img class="book-cover-image" src="images/cookie.png" alt="cookie-image">
+        </div>
+
+        <div class="hard book-cover-inner-trt">
+        </div>
+        <div class="content page-right">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">List of Treats Recipes</h2>
+            <div class="row">
+              <button type="button" name="button" data-page="4" class="btn recipe-list-item">Bee's Biscuits</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="5" class="btn recipe-list-item">Caramel Biscuits</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="6" class="btn recipe-list-item">Mom's Ginger Biscuits</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="7" class="btn recipe-list-item">Mississippi Mud Pies</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="8" class="btn recipe-list-item">Boost Bars</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="9" class="btn recipe-list-item">Flapjacks</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="10" class="btn recipe-list-item">Belgium Waffles ala Bernice</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="11" class="btn recipe-list-item">Ada's Scones</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="12" class="btn recipe-list-item">Soet Koekies</button>
+            </div>
+            </div>
+        </div>
+        <div class="page-left" id="bees-biscuits">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Bee's Biscuits</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2 1/2x cups all purpose flour</li>
+              <li>1x tsp salt</li>
+              <li>1x tsp baking soda</li>
+              <li>2x eggs</li>
+              <li>2x tsp vanilla extract</li>
+              <li>200g unslated room temperature butter</li>
+              <li>3/4x cup granulated sugar (possibly 1x cup or 180g)</li>
+              <li>3/4 x cup brown sugar (possibly 1x cup or 180g)</li>
+              <li>2x cups milk chocolate m&ms (can be switched out for alternatives)</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Preheat the oven to 170 degree celcius.
+              Cream butter and sugar together.
+              Beat in eggs and vanilla ( as well as milo/nesquick etc).
+              Fold in flour and m&m's.
+              Drop tablespoons of mixture onto a greased baking tray- allow for spreading.
+              Bake for 18-20mins.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="caramel-biscuits">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Caramel Biscuits</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>500g butter/margerine</li>
+              <li>375g sugar</li>
+              <li>397g tin condensed milk</li>
+              <li>750g flour</li>
+              <li>12.5ml baking powder</li>
+              <li>1x pinch salt</li>
+              <li>10ml caramel essence</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Cream butter and sugar until tight and fluffy.
+            Stir in the condensed milk.
+            Sift dry ingredients into creamed mixture and mix well.
+            Add essence – beat well.
+            Place into biscuit maker press onto baking tray 180 degrees Celsius 12-15min until golden brown.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="ginger-biscuits">
+          <div class="page-content">
+            <h2 class="recipe-list-heading"> Mom's Ginger Biscuits</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x eggs</li>
+              <li>1x tin golden syrup</li>
+              <li>8x cups flour</li>
+              <li>4x cups sugar</li>
+              <li>2x tsp ginger</li>
+              <li>1/2x tsp bicarbonate of soda</li>
+              <li>250g margerine</li>
+              <li>1/4x cup warm water</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Sift the dry ingredients.
+              Melt the margerine, syrup and then add the eggs .
+              Add the dry ingredients to the mixture.
+              Lastly add the bicarbonate of soda, dissolved in 1/4 cup warm water.
+              Make small balls of dough and flatten with a fork.
+              Bake at 180 degrees celcius until brown.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="m-mud-pies">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Mississippi Mud Pies</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1/2x cup milk <em>(stage 1)</em></li>
+              <li>1/2x cup margerine <em>(stage 1)</em></li>
+              <li>1/3x cup cocoa <em>(stage 1)</em></li>
+              <li>2x cups sugar <em>(stage 1)</em></li>
+              <li>3x cups oats <em>(stage 2)</em></li>
+              <li>1/2 cup peanut butter <em>(stage 2)</em></li>
+              <li>1/4 tsp salt <em>(stage 2)</em></li>
+              <li>1x tsp vanilla essence <em>(stage 2)</em></li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Boil the stage 1 ingredients together for 1 min.
+              Then remove from the stove and add the stage 2 ingredients.
+              Place tablespoon size portions on a baking tray with wax paper and place in fridge to set.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-left" id="boost-bars">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Boost bars</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>4x cups oats</li>
+              <li>4x cups rice cereal</li>
+              <li>1x cup seedless raisins</li>
+              <li>1x cup sunflower and pumpkin seeds (chopped)</li>
+              <li>1x cup chocolate chips</li>
+              <li>2x cups maple syrup</li>
+              <li>1 1/2x cups peanut butter (smooth)</li>
+              <li>salt to taste</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Heat syrup and peanut butter.
+              Combine remaining ingredients in a large bowl.
+              Stir in the syrupand peanut butter.
+              Pour into a large square pan and let cool.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right" id="flapjacks">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Flapjacks.</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1x cup flour</li>
+              <li>1x pinch salt</li>
+              <li>1x tsp baking powder</li>
+              <li>1x cup milk</li>
+              <li>2x tbls sugar</li>
+              <li>1x egg</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Mix all togther with a whisk and then fry single portions of batter in a little oil in a pan.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="belgium-waffles">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Belgium Waffles ala Bernice</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x cups flour</li>
+              <li>4x tsp baking powder</li>
+              <li>1/4x cup sugar</li>
+              <li>1/4x tsp salt</li>
+              <li>2x eggs whites</li>
+              <li>2x cups milk</li>
+              <li>1x cup oil</li>
+              <li>2x egg yolks</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Mix together the flour, baking powder, sugar and salt.
+              Whisk the egg whites.
+              In a seperate bowl mix the milk, oil and egg yolks.
+              Mix this with the dry ingredients and fold in the egg whites.
+              Use waffle iron to cook.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="scones">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Ada's Scones</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x cups flour</li>
+              <li>1/2x cup oil</li>
+              <li>1x tsp salt</li>
+              <li>1/2x cup cheddar cheese </li>
+              <li>4x tsp baking powder</li>
+              <li>1x egg</li>
+              <li>3/4 cup milk</li>
+              <li>4 1/2 tbls butter</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Sift the dry ingredients together.
+              Grate the butter into dry ingredients. Mix thoroughly with your hands.
+              Add the cheese, milk and eggs.
+              Roll out ~3/4 inch thick.
+              Press out with a cookie press.
+              Arrange tightly in a greased baking baking tray.
+              Bake in the oven at 180 degrees celcius for ~15min.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="soet-koekies">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Soet Koekies</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>12x cups flour</li>
+              <li>2x pounds margerine</li>
+              <li>8x tsps baking powder</li>
+              <li>4x tbls cinnamon</li>
+              <li>3x tbls cloves</li>
+              <li>5x cups sugar</li>
+              <li>1x tsp salt</li>
+              <li>1/4 cup brandy</li>
+              <li>4x tbls mixed spice</li>
+              <li>3x tbls nutmeg</li>
+              <li>6x eggs</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Mix dry ingredients together.
+              Add margerine to form fine crumbs.
+              Add the brandy and eggs.
+              Press out on a floured board and cut to size using a cookie cutter.
+              Before baking brush the biscuits with a little milk and egg mix.
+              Bake at 180 degrees celcius until brown ~ 1-2 hours.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hard book-cover-inner-trt" id="cover-inner-back-trt">
+        </div>
+        <div class="book-cover-trt hard" id="cover-back-trt">
+          <h1 class="book-cover-title">The End</h1>
+          <img class="book-cover-image" src="images/baking-1.png" alt="crossed-utensils">
+        </div>
+
+      </div>
+    <h2 class="book-description-end">For more awesome recipes check out the other categories.</h2>
+    </div>
+
+
+  </section>
+
+<!-- Alternate section  -->
+<section class="colored-section-type2 recipe-list-section-alternate">
+  <div class="container-fluid recipe-2">
+<div class="content page-right">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">List of Treats Recipes</h2>
+          <div class="row">
+            <a href="#bees-biscuits-alt" class="btn recipe-list-item">Bee's Biscuits</a>
+          </div>
+          <div class="row">
+            <a href="#caramel-biscuits-alt" class="btn recipe-list-item">Caramel Biscuits</a>
+          </div>
+          <div class="row">
+            <a href="#ginger-biscuits-alt" class="btn recipe-list-item">Mom's Ginger Biscuits</a>
+          </div>
+          <div class="row">
+            <a href="#m-mud-pies-alt" class="btn recipe-list-item">Mississippi Mud Pies</a>
+          </div>
+          <div class="row">
+            <a href="#boost-bars-alt" class="btn recipe-list-item">Boost Bars</a>
+          </div>
+          <div class="row">
+            <a href="#flapjacks-alt" class="btn recipe-list-item">Flapjacks</a>
+          </div>
+          <div class="row">
+            <a href="#belgium-waffles-alt" class="btn recipe-list-item">Belgium Waffles ala Bernice</a>
+          </div>
+          <div class="row">
+            <a href="#scones-alt" class="btn recipe-list-item">Ada's Scones</a>
+          </div>
+          <div class="row">
+            <a href="#soet-koekies-alt" class="btn recipe-list-item">Soet Koekies</a>
+          </div>
+          </div>
+      </div>
+      <div class="page-left" id="bees-biscuits-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Bee's Biscuits</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>2 1/2x cups all purpose flour</li>
+            <li>1x tsp salt</li>
+            <li>1x tsp baking soda</li>
+            <li>2x eggs</li>
+            <li>2x tsp vanilla extract</li>
+            <li>200g unslated room temperature butter</li>
+            <li>3/4x cup granulated sugar (possibly 1x cup or 180g)</li>
+            <li>3/4 x cup brown sugar (possibly 1x cup or 180g)</li>
+            <li>2x cups milk chocolate m&ms (can be switched out for alternatives)</li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method">Preheat the oven to 170 degree celcius.
+            Cream butter and sugar together.
+            Beat in eggs and vanilla ( as well as milo/nesquick etc).
+            Fold in flour and m&m's.
+            Drop tablespoons of mixture onto a greased baking tray- allow for spreading.
+            Bake for 18-20mins.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-right" id="caramel-biscuits-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Caramel Biscuits</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>500g butter/margerine</li>
+            <li>375g sugar</li>
+            <li>397g tin condensed milk</li>
+            <li>750g flour</li>
+            <li>12.5ml baking powder</li>
+            <li>1x pinch salt</li>
+            <li>10ml caramel essence</li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method">Cream butter and sugar until tight and fluffy.
+          Stir in the condensed milk.
+          Sift dry ingredients into creamed mixture and mix well.
+          Add essence – beat well.
+          Place into biscuit maker press onto baking tray 180 degrees Celsius 12-15min until golden brown.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-left" id="ginger-biscuits-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading"> Mom's Ginger Biscuits</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>2x eggs</li>
+            <li>1x tin golden syrup</li>
+            <li>8x cups flour</li>
+            <li>4x cups sugar</li>
+            <li>2x tsp ginger</li>
+            <li>1/2x tsp bicarbonate of soda</li>
+            <li>250g margerine</li>
+            <li>1/4x cup warm water</li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method">Sift the dry ingredients.
+            Melt the margerine, syrup and then add the eggs .
+            Add the dry ingredients to the mixture.
+            Lastly add the bicarbonate of soda, dissolved in 1/4 cup warm water.
+            Make small balls of dough and flatten with a fork.
+            Bake at 180 degrees celcius until brown.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-right" id="m-mud-pies-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Mississippi Mud Pies</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>1/2x cup milk <em>(stage 1)</em></li>
+            <li>1/2x cup margerine <em>(stage 1)</em></li>
+            <li>1/3x cup cocoa <em>(stage 1)</em></li>
+            <li>2x cups sugar <em>(stage 1)</em></li>
+            <li>3x cups oats <em>(stage 2)</em></li>
+            <li>1/2 cup peanut butter <em>(stage 2)</em></li>
+            <li>1/4 tsp salt <em>(stage 2)</em></li>
+            <li>1x tsp vanilla essence <em>(stage 2)</em></li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method">Boil the stage 1 ingredients together for 1 min.
+            Then remove from the stove and add the stage 2 ingredients.
+            Place tablespoon size portions on a baking tray with wax paper and place in fridge to set.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-left" id="boost-bars-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Boost bars</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>4x cups oats</li>
+            <li>4x cups rice cereal</li>
+            <li>1x cup seedless raisins</li>
+            <li>1x cup sunflower and pumpkin seeds (chopped)</li>
+            <li>1x cup chocolate chips</li>
+            <li>2x cups maple syrup</li>
+            <li>1 1/2x cups peanut butter (smooth)</li>
+            <li>salt to taste</li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method"> Heat syrup and peanut butter.
+            Combine remaining ingredients in a large bowl.
+            Stir in the syrupand peanut butter.
+            Pour into a large square pan and let cool.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-right" id="flapjacks-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Flapjacks.</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>1x cup flour</li>
+            <li>1x pinch salt</li>
+            <li>1x tsp baking powder</li>
+            <li>1x cup milk</li>
+            <li>2x tbls sugar</li>
+            <li>1x egg</li>
+          </ul>
+          <h3 class="method">Method</h3>
+          <p class="method"> Mix all togther with a whisk and then fry single portions of batter in a little oil in a pan.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-left" id="belgium-waffles-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Belgium Waffles ala Bernice</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>2x cups flour</li>
+            <li>4x tsp baking powder</li>
+            <li>1/4x cup sugar</li>
+            <li>1/4x tsp salt</li>
+            <li>2x eggs whites</li>
+            <li>2x cups milk</li>
+            <li>1x cup oil</li>
+            <li>2x egg yolks</li>
+            </ul>
+          <h3 class="method">Method</h3>
+          <p class="method"> Mix together the flour, baking powder, sugar and salt.
+            Whisk the egg whites.
+            In a seperate bowl mix the milk, oil and egg yolks.
+            Mix this with the dry ingredients and fold in the egg whites.
+            Use waffle iron to cook.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-right" id="scones-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Ada's Scones</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>2x cups flour</li>
+            <li>1/2x cup oil</li>
+            <li>1x tsp salt</li>
+            <li>1/2x cup cheddar cheese </li>
+            <li>4x tsp baking powder</li>
+            <li>1x egg</li>
+            <li>3/4 cup milk</li>
+            <li>4 1/2 tbls butter</li>
+            </ul>
+          <h3 class="method">Method</h3>
+          <p class="method"> Sift the dry ingredients together.
+            Grate the butter into dry ingredients. Mix thoroughly with your hands.
+            Add the cheese, milk and eggs.
+            Roll out ~3/4 inch thick.
+            Press out with a cookie press.
+            Arrange tightly in a greased baking baking tray.
+            Bake in the oven at 180 degrees celcius for ~15min.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-left" id="soet-koekies-alt">
+        <div class="page-content">
+          <h2 class="recipe-list-heading">Soet Koekies</h2>
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>12x cups flour</li>
+            <li>2x pounds margerine</li>
+            <li>8x tsps baking powder</li>
+            <li>4x tbls cinnamon</li>
+            <li>3x tbls cloves</li>
+            <li>5x cups sugar</li>
+            <li>1x tsp salt</li>
+            <li>1/4 cup brandy</li>
+            <li>4x tbls mixed spice</li>
+            <li>3x tbls nutmeg</li>
+            <li>6x eggs</li>
+            </ul>
+          <h3 class="method">Method</h3>
+          <p class="method"> Mix dry ingredients together.
+            Add margerine to form fine crumbs.
+            Add the brandy and eggs.
+            Press out on a floured board and cut to size using a cookie cutter.
+            Before baking brush the biscuits with a little milk and egg mix.
+            Bake at 180 degrees celcius until brown ~ 1-2 hours.
+          </p>
+          <div class="row">
+            <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+</section>
+
+<!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="turn.min.js"></script>
+
+  <script>
+    $('#book').turn({
+      gradients: true,
+      acceleration: true
+    });
+  </script>
+  <script src="treats.js"></script>
+
+  </script>
+</body>
+<footer class="end-section" id="footer">
+  <p class="footer-text">Recipes have been compiled and sourced from various sources</p>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
+  </html>
+  </div>
+
+</footer>
+
+
+</html>

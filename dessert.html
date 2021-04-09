@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bee's Recipes</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <!-- CSS Style Sheet Connections -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="icon" href="css/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- Font Awesome (for cute icons) -->
+  <script src="https://kit.fontawesome.com/159ac4896e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Bee's Recipes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="contents.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="savoury.html">Savoury</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dessert.html">Desserts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="treats.html">Treats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- original section -->
+
+  <section class="colored-section-type2 recipe-list-section">
+    <div class="container-fluid recipe">
+      <img src="images/bee.png" alt="bee-image" class="top-left-image">
+      <h2 class="book-description">Life is too short to not have dessert!</h2>
+      <div id="book">
+
+
+        <div class="book-cover-des hard p1 odd" id="book-zoom">
+          <h1 class="book-cover-title">Desserts</h1>
+          <img class="book-cover-image" src="images/dessert.png" alt="dessert-image">
+        </div>
+
+        <div class="hard book-cover-inner-des">
+        </div>
+        <div class="content page-right">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">List of Dessert Recipes</h2>
+            <div class="row">
+              <button type="button" name="button" data-page="4" class="btn recipe-list-item">Chocolate Cake</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="5" class="btn recipe-list-item">Caramel Pudding</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="6" class="btn recipe-list-item">Pineapple Cheesecake</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="7" class="btn recipe-list-item">Pineapple Flan</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="8" class="btn recipe-list-item">Carrot Cake</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="10" class="btn recipe-list-item">Pear Pudding</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="11" class="btn recipe-list-item">Banana Bread</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="12" class="btn recipe-list-item">Royal Hot Milk Sponge Cake</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="13" class="btn recipe-list-item">Peppermint Crisp Tart</button>
+            </div>
+            <div class="row">
+              <button type="button" name="button" data-page="14" class="btn recipe-list-item">Fruit cake</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="chocolate-cake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Chocolate Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x Moirs Moist Chocolate Cake mix (substitute available)</li>
+              <li>1 1/2x cups of milk</li>
+              <li>1/2x cup of sugar</li>
+              <li>2 tbls margarine</li>
+              <li>200g wholenut chocolate</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Bake the moirs chocolate cake according to the instructions on the back.
+              Boil the milk,sugar and margarine together.
+              When the cake comes out of the oven, pour this mixture over the hot cake.
+              Melt the chocolate and mix with some milk to make it saucy.
+              Pour the chocolate sauce over the cake when it has cooled.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="caramel-pudding">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Caramel Pudding</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x tin of condensed milk</li>
+              <li>3x eggs</li>
+              <li>1x tsp vanilla essence</li>
+              <li>4x tbls sugar</li>
+              <li>1x tin of water</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Beat eggs, condensed milk and water, then add vanilla essence.
+              Melt the sugar and stir until it becomes caramel (till pale brown).
+              Pour in bottom of dish.
+              Pour over caramel.
+              Put the water in a separate dish (1/2 full) and place in the oven for 1 hour at 160 degrees Celsius.
+              Let cool, then place in the fridge for 3 hours.
+              Put cream on top with flake.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="pineapple-cheesecake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pineapple Cheesecake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1x packet of pineapple jelly</li>
+              <li>200ml boiling water</li>
+              <li>1x 410g tin of pineapple pieces</li>
+              <li>250ml fresh cream</li>
+              <li>250g cream cheese</li>
+              <li>1x packet of tennis biscuits</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Drain the syrup off the pineapple pieces and retain 150ml.
+              Dissolve the jelly powder in 200ml boiling water and then add the 150ml of pineapple syrup.
+              Allow to cool and refrigerate until semi-set.
+              Whip the cream to soft peaks.
+              Fold the whipped cream and the cream cheese into jelly.
+              Spread a layer of this mixture in an oblong dish (ie. 25cm x 16cm).
+              Place a few pineapple pieces on top.
+              Place a layer of tennis biscuits on the pineapple pieces and repeat, ending with pineapple.
+              Refrigerate until firmly set.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="pineapple-flan">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pineapple Flan</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>3x eggs</li>
+              <li>3/4 cup of sugar</li>
+              <li>2x cups of flour</li>
+              <li>3x tsps baking powder</li>
+              <li>1x pinch of salt</li>
+              <li>1/4x pound soft margerine</li>
+              <li>3/4 cups of milk</li>
+              <li>2x cups water (pineapple mixture)</li>
+              <li>2x cups sugar (pineapple mixture)</li>
+              <li>1x grated pineapple (pineapple mixture)</li>
+              <li>4x tbls of custard</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Cream the butter and sugar together.
+              Add the eggs one at a time, beating in between.
+              Sift the dry ingredients together and then add them to the mixture.
+              Add milk unitl the mixture is not too runny and not too firm.
+              Bake at 180 degrees celcius for ~25-30mins.
+              Add the water, sugar and grated pineapple together to create the pineapple mixture.
+              Add 4 tbls custard mixed with a little water to the pineapple mix.
+              Boil until the mix is shiny.
+              Leave to cool and place in the flan tin with cream.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="carrot-cake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Carrot Cake</h2>
+            <h3 class="ingredients">Ingredients - cake</h3>
+            <ul class="ingredient-list">
+              <li>2 1/2x cups (625ml) flour</li>
+              <li>2x (10ml) tsp of baking powder</li>
+              <li>1 1/2x tsp (7.5ml) bicarbonate of soda</li>
+              <li>3x tsp (15ml) mixed spice</li>
+              <li>1x tsp (5ml) salt</li>
+              <li>1 1/2x cups (375ml) sugar</li>
+              <li>1 1/4x cups (310ml) of oil</li>
+              <li>4x eggs</li>
+              <li>2x cups (500ml) grated carrots/ granny smith apples</li>
+              <li>1x cup (125ml) grated fresh pineapple or crushed tinned pineapple</li>
+              <li>1/2x cup (125ml) chopped pecan nuts</li>
+              <li>1/4x cup (62.5ml) smooth apricot jam</li>
+              <li>250g raisins <em>(optional)</em></li>
+            </ul>
+            <h3 class="method">Method - cake</h3>
+            <p class="method"> Sift the dry ingredients together (twice). Beat the sugar, oil and eggs together until well-blended.
+              Use an electric hand beater and beat at high speed for 3 mins.
+              Sift the dry ingredients over the mixture and fold in with a spatula until uniformly blended.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right" id="carrot-cake-2">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Carrot Cake cont.</h2>
+            <p class="method"> Grease a 28cm loose-bottomed springform tube or angel cake tin and sprinkle with dry breadcrumbs to coat lightly.
+              Pour the mixture into the prepared cake tin and bakle at 180-190 degrees celcius for 45 min.
+              Allow the cake to firm and cool in the tin for 10min before turning out.
+            </p>
+            <h3 class="ingredients">Ingredients - icing</h3>
+            <ul class="ingredient-list">
+              <li>1/2x cup (125ml) butter</li>
+              <li>4x (500g) icing sugar</li>
+              <li>1x tsp (5ml) vanilla essence</li>
+              <li>125g or 250g of cream cheese</li>
+            </ul>
+            <h3 class="method">Method - icing</h3>
+            <p class="method"> Cream the butter and gradually add the icing sugar.
+              Add the vanilla, followed by the cream cheese.
+              Don't beat the cheese too much as the mixture will become watery. (If you drip dry the cream-cheese in a muslin cloth overnight , it becomes much firmer.)
+              Ice the cake when it has cooled.
+              Note that the cake can also be baked in a muffin tray for only 30mins.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="pear-pudding">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pear Pudding</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x tbls margerine</li>
+              <li>1/2x cup of sugar</li>
+              <li>1/2x tsp of salt</li>
+              <li>1x cup flour</li>
+              <li>1x heaped tsp baking powder</li>
+              <li>3x eggs</li>
+              <li>1/2x cup of milk</li>
+              <li>1x tsp vanilla</li>
+              <li>1x can of pears</li>
+              <li>250ml cream (sauce)</li>
+              <li>1/2x cup of sugar (sauce)</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Cream the margerine and sugar adding eggs one at a time. Sift the dry ingredients together and add to the mixture.
+              Add the milk and then pour the mixture into a dish.
+              Drain off the pear syrup and lay the sliced pears onto the mixture.
+              Bake for 20-30min until brown.
+              Boil the cream with 1/2 cup sugar then pour this over the pudding and put it back in the oven at 180 degrees celcius.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="banana-bread">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Banana Bread</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1/2x cup (125g) margerine</li>
+              <li>1x cup (250ml) of sugar</li>
+              <li>1x tsp (5ml) vanilla essence</li>
+              <li>1x tsp (5ml) baking powder</li>
+              <li>1/2x cup (125ml) boiling water</li>
+              <li>2x eggs</li>
+              <li>4x mashed bananas</li>
+              <li>2x cups (500ml) cake flour</li>
+              <li>1x tsp (5ml) bicarbonate of soda</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> cream the margerine and sugar together. beat in the vanilla essence and eggs one at a time.
+              Add the sifted flour and baking powder.
+              Add the bicarbonate of soda dissolved in the boiling water.
+              Mix very well.
+              Add the finely mashed bananas. Turn into a greased loaf pan and bake at 180 degrees celcius for 1 hour or until baked.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="royal-sponge-cake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Royal Hot Milk Sponge Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x eggs</li>
+              <li>3/4x cup castor sugar</li>
+              <li>1/8x tsp salt</li>
+              <li>1/2x cup of milk</li>
+              <li>1/2x tsp vanilla extract</li>
+              <li>1x cup flour</li>
+              <li>2x tsp Royal baking powder</li>
+              <li>2x level tbls butter</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Sift the flour, salt and baking powder 3 times.
+              Beat the eggs adding the sugar gradually.
+              Add the dry ingredients to the egg mixture and fold in well.
+              Pour in hot milk and butter mixture.
+              Beat for 1 minute.
+              Divide into 2 greased pans and bake at 450 degrees farenheight for 12min.
+              Put together with jam or filling when cold.
+              Ice with water icing.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="peppermint-crisp">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Peppermint Crisp Tart</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x 250ml cream</li>
+              <li>2x tins of caramel</li>
+              <li>1x packet of tennis biscuits</li>
+              <li>2x large peppermint crisp chocolate bars</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Beat the cream until very stiff.
+              Add the caramel and mix.
+              Grate the chocolate into the mixture.
+              Put a layer of tennis biscuits in a dish, pour the mixture over it.
+              Grate some extra chocolate on top.
+              Leave in the fridge to set.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="fruit-cake">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Fruit Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1x medium tin of fruit</li>
+              <li>1x cup flour</li>
+              <li>1x cup milk</li>
+              <li>10ml baking powder</li>
+              <li>1x egg</li>
+              <li>1x cup sugar</li>
+              <li>1x tsp (5ml) of oil</li>
+              <li>Some cinnamon and sugar</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Place fruit in a greased dish and sprinkle with cinnamon and sugar.
+              Place the egg, flour, sugar, milk, and oil in a shaker and give it a quick shake and mix well.
+              Open the shaker and add the baking powder.
+              Seal again and shake 6 times.
+              Unseal slightly to let it breathe and then shake another 6 times.
+              Pour this over the fruit and bake for ~30min.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="hard book-cover-inner-des" id="cover-inner-back">
+        </div>
+        <div class="book-cover-des hard" id="cover-back">
+          <h1 class="book-cover-title">The End</h1>
+          <img class="book-cover-image" src="images/baking-1.png" alt="crossed-utensils">
+        </div>
+
+      </div>
+        <h2 class="book-description-end">For more awesome recipes check out the other categories.</h2>
+    </div>
+
+
+  </section>
+
+  <!-- alternate section -->
+
+  <section class="colored-section-type2 recipe-list-section-alternate">
+      <div class="container-fluid recipe-2 alternate-view">
+
+        <div class="content page-right">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">List of Dessert Recipes</h2>
+            <div class="row">
+              <a href="#chocolate-cake-alt" class="btn recipe-list-item">Chocolate Cake</a>
+            </div>
+            <div class="row">
+              <a href="#caramel-pudding-alt" class="btn recipe-list-item">Caramel Pudding</a>
+            </div>
+            <div class="row">
+              <a href="#pineapple-cheesecake-alt" class="btn recipe-list-item">Pineapple Cheesecake</a>
+            </div>
+            <div class="row">
+              <a href="#pineapple-flan-alt" class="btn recipe-list-item">Pineapple Flan</a>
+            </div>
+            <div class="row">
+              <a href="#carrot-cake-alt" class="btn recipe-list-item">Carrot Cake</a>
+            </div>
+            <div class="row">
+              <a href="#pear-pudding-alt" class="btn recipe-list-item">Pear Pudding</a>
+            </div>
+            <div class="row">
+              <a href="#banana-bread-alt" class="btn recipe-list-item">Banana Bread</a>
+            </div>
+            <div class="row">
+              <a  href="#royal-sponge-cake-alt" class="btn recipe-list-item">Royal Hot Milk Sponge Cake</a>
+            </div>
+            <div class="row">
+              <a href="#peppermint-crisp-alt" class="btn recipe-list-item">Peppermint Crisp Tart</a>
+            </div>
+            <div class="row">
+              <a href="#fruit-cake-alt" class="btn recipe-list-item">Fruit cake</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="chocolate-cake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Chocolate Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x Moirs Moist Chocolate Cake mix (substitute available)</li>
+              <li>1 1/2x cups of milk</li>
+              <li>1/2x cup of sugar</li>
+              <li>2 tbls margarine</li>
+              <li>200g wholenut chocolate</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Bake the moirs chocolate cake according to the instructions on the back.
+              Boil the milk,sugar and margarine together.
+              When the cake comes out of the oven, pour this mixture over the hot cake.
+              Melt the chocolate and mix with some milk to make it saucy.
+              Pour the chocolate sauce over the cake when it has cooled.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="caramel-pudding-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Caramel Pudding</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1 x tin of condensed milk</li>
+              <li>3x eggs</li>
+              <li>1x tsp vanilla essence</li>
+              <li>4x tbls sugar</li>
+              <li>1x tin of water</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Beat eggs, condensed milk and water, then add vanilla essence.
+              Melt the sugar and stir until it becomes caramel (till pale brown).
+              Pour in bottom of dish.
+              Pour over caramel.
+              Put the water in a separate dish (1/2 full) and place in the oven for 1 hour at 160 degrees Celsius.
+              Let cool, then place in the fridge for 3 hours.
+              Put cream on top with flake.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="pineapple-cheesecake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pineapple Cheesecake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1x packet of pineapple jelly</li>
+              <li>200ml boiling water</li>
+              <li>1x 410g tin of pineapple pieces</li>
+              <li>250ml fresh cream</li>
+              <li>250g cream cheese</li>
+              <li>1x packet of tennis biscuits</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Drain the syrup off the pineapple pieces and retain 150ml.
+              Dissolve the jelly powder in 200ml boiling water and then add the 150ml of pineapple syrup.
+              Allow to cool and refrigerate until semi-set.
+              Whip the cream to soft peaks.
+              Fold the whipped cream and the cream cheese into jelly.
+              Spread a layer of this mixture in an oblong dish (ie. 25cm x 16cm).
+              Place a few pineapple pieces on top.
+              Place a layer of tennis biscuits on the pineapple pieces and repeat, ending with pineapple.
+              Refrigerate until firmly set.
+
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="pineapple-flan-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pineapple Flan</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>3x eggs</li>
+              <li>3/4 cup of sugar</li>
+              <li>2x cups of flour</li>
+              <li>3x tsps baking powder</li>
+              <li>1x pinch of salt</li>
+              <li>1/4x pound soft margerine</li>
+              <li>3/4 cups of milk</li>
+              <li>2x cups water (pineapple mixture)</li>
+              <li>2x cups sugar (pineapple mixture)</li>
+              <li>1x grated pineapple (pineapple mixture)</li>
+              <li>4x tbls of custard</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method">Cream the butter and sugar together.
+              Add the eggs one at a time, beating in between.
+              Sift the dry ingredients together and then add them to the mixture.
+              Add milk unitl the mixture is not too runny and not too firm.
+              Bake at 180 degrees celcius for ~25-30mins.
+              Add the water, sugar and grated pineapple together to create the pineapple mixture.
+              Add 4 tbls custard mixed with a little water to the pineapple mix.
+              Boil until the mix is shiny.
+              Leave to cool and place in the flan tin with cream.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="carrot-cake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Carrot Cake</h2>
+            <h3 class="ingredients">Ingredients - cake</h3>
+            <ul class="ingredient-list">
+              <li>2 1/2x cups (625ml) flour</li>
+              <li>2x (10ml) tsp of baking powder</li>
+              <li>1 1/2x tsp (7.5ml) bicarbonate of soda</li>
+              <li>3x tsp (15ml) mixed spice</li>
+              <li>1x tsp (5ml) salt</li>
+              <li>1 1/2x cups (375ml) sugar</li>
+              <li>1 1/4x cups (310ml) of oil</li>
+              <li>4x eggs</li>
+              <li>2x cups (500ml) grated carrots/ granny smith apples</li>
+              <li>1x cup (125ml) grated fresh pineapple or crushed tinned pineapple</li>
+              <li>1/2x cup (125ml) chopped pecan nuts</li>
+              <li>1/4x cup (62.5ml) smooth apricot jam</li>
+              <li>250g raisins <em>(optional)</em></li>
+            </ul>
+            <h3 class="method">Method - cake</h3>
+            <p class="method"> Sift the dry ingredients together (twice). Beat the sugar, oil and eggs together until well-blended.
+              Use an electric hand beater and beat at high speed for 3 mins.
+              Sift the dry ingredients over the mixture and fold in with a spatula until uniformly blended.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right" id="carrot-cake-2-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Carrot Cake cont.</h2>
+            <p class="method"> Grease a 28cm loose-bottomed springform tube or angel cake tin and sprinkle with dry breadcrumbs to coat lightly.
+              Pour the mixture into the prepared cake tin and bakle at 180-190 degrees celcius for 45 min.
+              Allow the cake to firm and cool in the tin for 10min before turning out.
+            </p>
+            <h3 class="ingredients">Ingredients - icing</h3>
+            <ul class="ingredient-list">
+              <li>1/2x cup (125ml) butter</li>
+              <li>4x (500g) icing sugar</li>
+              <li>1x tsp (5ml) vanilla essence</li>
+              <li>125g or 250g of cream cheese</li>
+            </ul>
+            <h3 class="method">Method - icing</h3>
+            <p class="method"> Cream the butter and gradually add the icing sugar.
+              Add the vanilla, followed by the cream cheese.
+              Don't beat the cheese too much as the mixture will become watery. (If you drip dry the cream-cheese in a muslin cloth overnight , it becomes much firmer.)
+              Ice the cake when it has cooled.
+              Note that the cake can also be baked in a muffin tray for only 30mins.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="pear-pudding-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Pear Pudding</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x tbls margerine</li>
+              <li>1/2x cup of sugar</li>
+              <li>1/2x tsp of salt</li>
+              <li>1x cup flour</li>
+              <li>1x heaped tsp baking powder</li>
+              <li>3x eggs</li>
+              <li>1/2x cup of milk</li>
+              <li>1x tsp vanilla</li>
+              <li>1x can of pears</li>
+              <li>250ml cream (sauce)</li>
+              <li>1/2x cup of sugar (sauce)</li>
+            </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Cream the margerine and sugar adding eggs one at a time. Sift the dry ingredients together and add to the mixture.
+              Add the milk and then pour the mixture into a dish.
+              Drain off the pear syrup and lay the sliced pears onto the mixture.
+              Bake for 20-30min until brown.
+              Boil the cream with 1/2 cup sugar then pour this over the pudding and put it back in the oven at 180 degrees celcius.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="banana-bread-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Banana Bread</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1/2x cup (125g) margerine</li>
+              <li>1x cup (250ml) of sugar</li>
+              <li>1x tsp (5ml) vanilla essence</li>
+              <li>1x tsp (5ml) baking powder</li>
+              <li>1/2x cup (125ml) boiling water</li>
+              <li>2x eggs</li>
+              <li>4x mashed bananas</li>
+              <li>2x cups (500ml) cake flour</li>
+              <li>1x tsp (5ml) bicarbonate of soda</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> cream the margerine and sugar together. beat in the vanilla essence and eggs one at a time.
+              Add the sifted flour and baking powder.
+              Add the bicarbonate of soda dissolved in the boiling water.
+              Mix very well.
+              Add the finely mashed bananas. Turn into a greased loaf pan and bake at 180 degrees celcius for 1 hour or until baked.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="royal-sponge-cake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Royal Hot Milk Sponge Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x eggs</li>
+              <li>3/4x cup castor sugar</li>
+              <li>1/8x tsp salt</li>
+              <li>1/2x cup of milk</li>
+              <li>1/2x tsp vanilla extract</li>
+              <li>1x cup flour</li>
+              <li>2x tsp Royal baking powder</li>
+              <li>2x level tbls butter</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Sift the flour, salt and baking powder 3 times.
+              Beat the eggs adding the sugar gradually.
+              Add the dry ingredients to the egg mixture and fold in well.
+              Pour in hot milk and butter mixture.
+              Beat for 1 minute.
+              Divide into 2 greased pans and bake at 450 degrees farenheight for 12min.
+              Put together with jam or filling when cold.
+              Ice with water icing.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-right" id="peppermint-crisp-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Peppermint Crisp Tart</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>2x 250ml cream</li>
+              <li>2x tins of caramel</li>
+              <li>1x packet of tennis biscuits</li>
+              <li>2x large peppermint crisp chocolate bars</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Beat the cream until very stiff.
+              Add the caramel and mix.
+              Grate the chocolate into the mixture.
+              Put a layer of tennis biscuits in a dish, pour the mixture over it.
+              Grate some extra chocolate on top.
+              Leave in the fridge to set.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-left" id="fruit-cake-alt">
+          <div class="page-content">
+            <h2 class="recipe-list-heading">Fruit Cake</h2>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul class="ingredient-list">
+              <li>1x medium tin of fruit</li>
+              <li>1x cup flour</li>
+              <li>1x cup milk</li>
+              <li>10ml baking powder</li>
+              <li>1x egg</li>
+              <li>1x cup sugar</li>
+              <li>1x tsp (5ml) of oil</li>
+              <li>Some cinnamon and sugar</li>
+              </ul>
+            <h3 class="method">Method</h3>
+            <p class="method"> Place fruit in a greased dish and sprinkle with cinnamon and sugar.
+              Place the egg, flour, sugar, milk, and oil in a shaker and give it a quick shake and mix well.
+              Open the shaker and add the baking powder.
+              Seal again and shake 6 times.
+              Unseal slightly to let it breathe and then shake another 6 times.
+              Pour this over the fruit and bake for ~30min.
+            </p>
+            <div class="row">
+              <button type="button" name="button" data-page="2" class="btn recipe-list-item toc-link">Table of Contents</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  <!-- Javascript -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="turn.min.js"></script>
+
+  <script>
+    $('#book').turn({
+      gradients: true,
+      acceleration: true
+    });
+  </script>
+  <script src="dessert.js"></script>
+
+  </script>
+</body>
+<footer class="end-section" id="footer">
+  <p class="footer-text">Recipes have been compiled and sourced from various sources</p>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div class="footer-text">Icons made by <a class="footer-text" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a class="footer-text" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
+  </html>
+  </div>
+
+</footer>
+
+
+</html>
